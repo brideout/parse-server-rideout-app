@@ -6,14 +6,14 @@ var ParseServer = require('parse-server').ParseServer;
 var path = require('path');
 var shopifyAPI = require('shopify-node-api');
 
-var databaseUri = 'mongodb://heroku_qphgm0pv:269fjf9ulntucikkqav9h4jb6i@ds117316.mlab.com:17316/heroku_qphgm0pv';
+var databaseUri = 'mongodb://heroku_rm89l12g:m37fdjh8efet482k8i2vij965r@ds111059.mlab.com:11059/heroku_rm89l12g';
 
 
 var api = new ParseServer({
   databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
-  appId: process.env.APP_ID || 'rrenterprisesklj20fj902knopi',
-  masterKey: process.env.MASTER_KEY || 'lkjklJO209Klkjo3lkLqz038', //Add your master key here. Keep it secret!
+  appId: process.env.APP_ID || 'rideout-web8Lin24QNLmown',
+  masterKey: process.env.MASTER_KEY || 'lkqoiLN378CEOGHB237fjlWjn', //Add your master key here. Keep it secret!
   serverURL: process.env.SERVER_URL || 'http://localhost:1337/parse',  // Don't forget to change to https if needed
   enableAnonymousUsers: process.env.ANON_USERS || false,
   allowClientClassCreation: process.env.CLIENT_CLASS_CREATION || false,
